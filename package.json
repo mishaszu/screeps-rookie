@@ -1,0 +1,24 @@
+{
+  "name": "screeps-rookie",
+  "version": "0.0.1",
+  "description": "rookie game script",
+  "main": "send.js",
+  "scripts": {
+    "test": "node send.js",
+    "default": "node send.js default",
+    "tutorial1": "node send.js tutorial-1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mishaszu/screeps-rookie.git"
+  },
+  "author": "mishaszu@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mishaszu/screeps-rookie/issues"
+  },
+  "homepage": "https://github.com/mishaszu/screeps-rookie#readme",
+  "dependencies": {
+    "b-pipe": "0.0.1"
+  }
+}
