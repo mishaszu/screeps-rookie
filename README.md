@@ -2,41 +2,40 @@
 
 My own gameplay.
 
+## how to
 
-## stable
-
-Branch with working game version
-
-## add configuration
-create **credi.js** file in main directory and add:
+1) add screeps-rookie to your project
 ```
-module.exports = {
-  mail: yourmail,
-  pas: yourpassword
+const sRookie = require('screep-rookies')
+```
+2) pass paramaters to funcstion
+
+```
+sRookie.send(path, creditionals)
+```
+where:
+- path: is path to directory where branch modules are stored. Name branch directory as branch
+- creditionals: object with
+  - email
+  - password
+```
+{
+  email: youremail,
+  password: yourpassword
 }
 ```
+**BEWARE: Remember to not push your creditionals to remote repository. You should add file with creditionals to .gitignore**
 
-## adding branches
+## example
 
-- add folder to directory:
-name it as branch
 ```
-node-lib/branches
-```
-- add folder to manifest **node-lib/branches/index.js**
-```
-exports.branches {
-  defulat: true,
-  yourbranch: true
-}
-```
-- add npm script to **package.json**
-```
-"scripts": {
-  "default": "node send.js default",
-  "yourbranch", "node sens.js yourbranch"
-}
-- send your branch typing in console
-```
-npm run yourbranch
+const sRookie = require('screep-rookies')
+
+sRookie.send(
+  __dirname + '/testdir/default',
+  {
+    email: tester,
+    password: testerpass
+  }
+)
 ```
