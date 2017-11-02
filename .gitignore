@@ -1,0 +1,5 @@
+credi.js
+*.orig
+*.swp
+node_modules
+dist
