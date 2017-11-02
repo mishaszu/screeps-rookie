@@ -4,7 +4,7 @@
   "description": "rookie game script",
   "main": "send.js",
   "scripts": {
-    "test": "node s-rookie.js",
+    "test": "node s-rookie.js"
   },
   "repository": {
     "type": "git",
