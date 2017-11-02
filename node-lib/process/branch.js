@@ -1,4 +1,3 @@
-const {branches} = require('../branches')
 const fs = require('fs')
 
 const Read = require('./read')
