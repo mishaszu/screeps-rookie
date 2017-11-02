@@ -2,7 +2,7 @@
   "name": "screeps-rookie",
   "version": "0.0.3",
   "description": "rookie game script",
-  "main": "send.js",
+  "main": "s-rookie.js",
   "scripts": {
     "test": "node s-rookie.js"
   },
