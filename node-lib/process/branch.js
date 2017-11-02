@@ -4,13 +4,9 @@ const fs = require('fs')
 const Read = require('./read')
 
 function Branch() {
-  function choose(name) {
-    const dir = `${__dirname}/../branches/${name}`
-    parseModules(dir)
-    return {
-      name: name,
-      modules: parseModules(dir)
-    }
+  function choose(obj) {
+    obj.modules = parseModules(obj.path)
+    return obj
   }
 
   function parseModules(dir) {

@@ -1,4 +1,3 @@
-const {mail, pas} = require('../../credi')
 var https = require('https');
 
 function Request() {
@@ -6,7 +5,7 @@ function Request() {
   function post(obj) {
     let status = ''
     const data = {
-      branch: obj.name,         
+      branch: obj.branch,         
       modules: obj.modules
     }
     const send = new Promise((resolve, reject) => {
@@ -15,7 +14,7 @@ function Request() {
         port: 443,
         path: '/api/user/code',
         method: 'POST',
-        auth: mail + ':' + pas,
+        auth: obj.email + ':' + obj.pass,
         headers: {
           'Content-Type': 'application/json; charset=utf-8'
         }
