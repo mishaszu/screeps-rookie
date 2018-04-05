@@ -89,7 +89,7 @@ run: function(creep) {
 *note
 Don't forget about commas as your subfiles content will be part of object after build*
 
-## example
+## examples
 
 ```
 const sRookie = require('screep-rookies')
