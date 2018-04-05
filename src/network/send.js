@@ -20,7 +20,7 @@ module.exports = {
       this.log.error(`Faced error: ${err}`);
     });
   },
-  networkLunch: function(sourceFolder, buildFolder, branch, config) {
+  networkLaunch: function(sourceFolder, buildFolder, branch, config) {
     const allFiles = this.dirRead(path.join(sourceFolder,branch));
     this.dirBuild(allFiles, path.join(buildFolder, branch));
     this.networkSend(path.join(buildFolder, branch), config);
