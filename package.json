@@ -2,9 +2,9 @@
   "name": "screeps-rookie",
   "version": "0.0.5",
   "description": "rookie game script",
-  "main": "s-rookie.js",
+  "main": "index.js",
   "scripts": {
-    "test": "node s-rookie.js"
+    "test": "node test/test.js"
   },
   "repository": {
     "type": "git",
@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/mishaszu/screeps-rookie#readme",
   "dependencies": {
-    "b-pipe": "0.0.1"
+    "b-pipe": "0.0.1",
+    "l-print": "0.0.8"
   }
 }
