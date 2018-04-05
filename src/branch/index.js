@@ -1,0 +1,1 @@
+exports.Branch = require('./branch');

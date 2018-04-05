@@ -1,6 +1,8 @@
-const https = require('https')
-const pipe = require('b-pipe')
-const {Branch, Request} = require('./node-lib/process')
+const https = require('https');
+const pipe = require('b-pipe');
+
+const {Branch} = require('./src/branch');
+const {Request} = require('./src/network');
 
 function SRookie() {
   
