@@ -1,7 +1,7 @@
 const https = require('https');
 
 module.exports = {
-  post: function(obj) {
+  requestPost: function(obj) {
     let status = '';
     const data = {
       branch: obj.branch,         
@@ -29,9 +29,5 @@ module.exports = {
       req.end();
     })
     return send;
-  },
-  
-  mock: function(obj) {
-    console.log(obj);
   },
 };
