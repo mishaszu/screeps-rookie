@@ -4,8 +4,7 @@ module.exports = {
     readFileSync: function(path) {
         const file = fs.readFileSync(path, 'utf8');
         if (!file) {
-            let name = file.split('.');
-            name = name[name.length - 2];
+            let name = path.split('/').pop();
             this.log.error(`Can not read file: ${name}`);
             return `//Can't read file ${name}`;
         }
